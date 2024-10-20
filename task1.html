@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timetable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Timetable 3 AC </h1>
+        <div class="grid-timetable">
+            <div class="header">Hours/Days</div>
+            <div class="time">10AM-11AM</div>
+            <div class="time">11AM-12PM</div>
+            <div class="time">12PM-1PM</div>
+            <div class="time">1PM-2PM</div>
+            <div class="time">2PM-3PM</div>
+            <div class="time">3PM-4PM</div>
+            <div class="time">4PM-5PM</div>
+            <div class="time">5PM-6PM</div>
+
+            <!-- Row 1 -->
+            <div class="header">Monday</div>
+            <div class="subject subject1" onclick="showTeacher('Logical Reasoning')">Logical Reasoning</div>
+            <div class="subject subject2" onclick="showTeacher('Data Mining')">Data Mining</div>
+            <div class="subject subject3"onclick="showTeacher('NLP')">NLP</div>
+            <div class="subject subject4" onclick="showTeacher('GROUP DISCUSSION')">GDPI</div>          
+            <div class="subject lu1">LUNCH</div>
+            <div class="subject subject5" onclick="showTeacher('COMPETITIVE_PROGRAMMING')">Competitive Programming</div>
+            <div class="subject subject6">N/A</div>
+            <div class="subject subject7" onclick="showTeacher('VERBAL APTITUDE')">VERBAL APTITUDE</div>
+
+
+            <!-- Row 2 -->
+            <div class="header">Tuesday</div>
+            <div class="subject subject01" onclick="showTeacher('NLP')">NLP</div>            
+            <div class="subject subject03" onclick="showTeacher('DATA STRUCTURES AND ALGORITHM')">Data Structures and Algorithm Lab</div>
+            <div class="subject subject05" onclick="showTeacher('NLP')">NLP</div>
+            <div class="subject subject06" onclick="showTeacher('Data Mining')">Data Mining</div>
+           
+
+            <!-- Row 3 -->
+            <div class="header">Wednesday</div>
+            <div class="subject subject11" >NA</div>
+            <div class="subject subject12" onclick="showTeacher('DATA STRUCTURES AND ALGORITHM')">DATA STRUCTURES AND ALGORITHM</div>
+            <div class="subject subject13"onclick="showTeacher('FULL_STACK')">Full Stack Development</div>
+            <div class="subject subject15" onclick="showTeacher('FULL_STACK')">Full Stack Development</div>
+            <div class="subject subject16">NA</div>
+            <div class="subject subject17"onclick="showTeacher('Data Mining')">Data Mining</div>
+
+            <!-- Row 4 -->
+            
+            <div class="header">Thursday</div>
+            <div class="subject subject21" onclick="showTeacher('DATA STRUCTURES AND ALGORITHM')">DATA STRUCTURES AND ALGORITHM</div>
+            <div class="subject subject23" >NA</div>
+            <div class="subject subject24"onclick="showTeacher('FULL_STACK')">Full Stack Development</div>
+            <div class="subject subject25"onclick="showTeacher('FULL_STACK')">Full Stack Development</div>
+            <div class="subject subject26">NA</div>
+
+            <!-- Row 5 (Lunch) -->
+            
+            <!-- <div class="subject lunch" colspan="5">Lunch</div> -->
+
+            <!-- Row 6 -->
+            <div class="header">Friday</div>      
+            <div class="subject subject31" onclick="showTeacher('COMPETITIVE_PROGRAMMING')">Competitive Programming</div>
+            <div class="subject subject32" onclick="showTeacher('FULL_STACK')">Full Stack Development</div>
+            <div class="subject subject33"onclick="showTeacher('QUANT AND APTITUDE')">QUANT AND APTITUDE</div>
+            <div class="subject subject34" onclick="showTeacher('Data Mining')">Data Mining</div>
+            <div class="subject subject35" onclick="showTeacher('NLP')">NLP</div>
+           
+            <div class="subject subject37">NA</div>
+            
+        </div>
+    </div>
+
+    <div id="teacher" class="modal">
+        <div class="content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="details"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
